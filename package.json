@@ -1,0 +1,70 @@
+{
+  "name": "dsh-wechat-clawbot",
+  "version": "0.12.4",
+  "private": true,
+  "description": "WeChat ClawBot (iLink) channel for DeepSeek Harness: QR sign-in, automatic connect on start, replies through the local DSH agent.",
+  "license": "MIT",
+  "author": "dsh-wechat-clawbot contributors",
+  "type": "module",
+  "main": "index.js",
+  "icon": "./icon.svg",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "wechat",
+    "weixin",
+    "ilink",
+    "clawbot",
+    "channel"
+  ],
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rorypond-account/dsh-wechat-clawbot.git"
+  },
+  "homepage": "https://github.com/Rorypond-account/dsh-wechat-clawbot#readme",
+  "bugs": {
+    "url": "https://github.com/Rorypond-account/dsh-wechat-clawbot/issues"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node --test"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "vendor/qrcode.mjs",
+    "bridge/*.py",
+    "config.example.json",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  }
+}

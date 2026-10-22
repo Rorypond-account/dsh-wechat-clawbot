@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "autoStart": true,
+  "replyEnabled": true,
+  "replyDisabledText": "微信桥接已连接，但「接入本地插件/提示词」已关闭，暂不自动回复。发送 /status 可查看连接状态。",
+  "useLocalPrompt": true,
+  "systemPrompt": "你是部署在微信里的 DeepSeek Harness 助手。回复使用简体中文，简洁直接；代码、列表等用适合微信阅读的纯文本格式。",
+  "cwd": "",
+  "provider": "",
+  "model": "",
+  "reasoningEffort": "",
+  "workspaces": [],
+  "permission": "workspace-write",
+  "allowFrom": [],
+  "progressMessages": true,
+  "announceSession": true,
+  "messageMaxChars": 2000,
+  "pythonPath": "",
+  "logLevel": "INFO",
+  "replyTimeoutS": 1800,
+  "longPollTimeoutS": 35
+}

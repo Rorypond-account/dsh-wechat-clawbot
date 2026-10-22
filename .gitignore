@@ -1,0 +1,41 @@
+# Runtime data — never commit. The plugin keeps all state under
+# $DSH_HOME/wechat-clawbot/, which is outside this repo; these entries cover
+# accidental copies made while developing.
+config.json
+state/
+log/
+logs/
+*.log
+*.log.*
+
+# Credentials and secrets
+.credentials.yaml
+.credentials*
+.env
+.env.*
+*.pem
+*.key
+*.crt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local notes and screenshots that may contain personal data
+docs/images/private/
+notes/
+scratch/

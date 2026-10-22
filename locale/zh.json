@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "微信 ClawBot 桥接",
+    "description": "在设置里扫码登录微信，DSH 启动时自动连接 ClawBot；微信消息交给本机 DSH agent（本地插件与提示词）生成回复，可在设置中关闭。"
+  }
+}

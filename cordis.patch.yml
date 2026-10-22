@@ -1,0 +1,10 @@
+# dsh-wechat-clawbot — one Host row.
+#
+# The row owns: a Python iLink transport child process, the per-peer sessions it
+# creates through `ctx.agents`, and the `/api/wechat-clawbot/*` routes the
+# browser settings page calls. Settings live in `$DSH_HOME/wechat-clawbot/config.json`
+# and are edited from the bundle's own page (Settings → Plugins → dsh-wechat-clawbot),
+# so this row declares no Config schema.
+- insert:
+    - id: channel-wechat-clawbot
+      name: dsh-wechat-clawbot

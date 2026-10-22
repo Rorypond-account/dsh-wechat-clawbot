@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "WeChat ClawBot Bridge",
+    "description": "Scan a QR code to sign in to WeChat, connect ClawBot automatically when DSH starts, and answer WeChat messages through the local DSH agent (local plugins and prompt). Can be switched off in settings."
+  }
+}
